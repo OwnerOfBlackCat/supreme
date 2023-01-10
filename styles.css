@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: black;
+    color:white;
+    padding: 118px 0;
+}
+
+.MainNews {
+    padding: 118px 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 69px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    padding: 2px 24px 11px 23px;
+    background-color: #FF0000;
+    margin-bottom: 38px;
+}
+
+time, p {
+    font-family: 'Space Mono';
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h3 {
+    font-family: 'Space Mono';
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 90px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li > a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.news > li > a {
+    color:black;
+}
+
+.archieve {
+    background-color: #FF0000;
+}
+
+a:hover, .news > li > a:hover {
+    color:#FF0000;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.icon {
+    padding:0 15px;
+ }
+
+ figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+ }
+
+.boy {
+    width: calc(100% - 24px);
+    padding-bottom: 20px;
+ }
+
+ article {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px 0 12px;
+ }
+
+ p {
+    margin-top: 12px;
+ }
+
+
+ @media only screen and (min-width: 920px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contentNews {
+        display: flex;
+        justify-content: center;
+        gap:20px;
+        padding-top: 62px;
+    }
+
+    .boy {
+            width: 390px;
+    }
+
+    .text{
+            width: 400px;
+            height: 240px;
+            overflow: hidden;
+    }
+
+    .news {
+        display: flex;
+        justify-content: space-evenly;
+        width: 920px ;
+        gap:4%;
+    }        
+}
